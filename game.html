@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<HTML>
+<!--William Schubert, 5/25/2023-->
+
+<!--We need to link the js file with the html file so we can use the js resources-->
+<script src="code2.js"></script>
+<!--The name of the page-->
+<head>
+    <title>Williams CRAP Page</title>
+</head>
+<!--The centered bold text at the top of the page-->
+<center>
+ <h2><header>Welcome to Williams CRAPS page</header></h2>
+</center>
+ <!--Here I changed the color of the page and center my pages header-->
+<body style="background: rgb(207, 218, 197);">
+    <header style="text-align: center;">
+<!--I added an image of some dice-->
+        <img id="DIE?" src="DIE.jfif" alt="Image of Dice">
+        <!--These are the rules of CRAPS-->
+        <p>
+        <h3>These are the rules of CRAPS</h3>
+            <!--Smaller font-->
+            <h4>1. Roll a 7 or 11 - LOSE
+            <br>2. Roll even doubles - WIN
+            <br>3. Roll neither - PUSH
+            <br>
+            </h4>
+        </p>
+        <!--Large font-->
+        <h2>Lets play CRAPS</h2>
+        <!-- Die 1 = -->
+        Die 1 result: <div id="die1Res">Die 1</div> <br>
+        <!-- Die 2 = -->
+        Die 2 result: <div id="die2Res">Die 2</div> <br>
+        <!-- Sum of Die 1 and Die 2 -->
+        Sum of the dice: <div id="diceSum">TOTAL</div> <br> 
+        <!-- Win, Lose, or Try Again -->
+        Game Result: <div id="gameRes">Press "Play CRAPS" to roll
+        dice</div>
+
+        <button onclick="playCraps();">PLAY CRAPS</button>
+        <br>
+        <br>
+
+</html>
