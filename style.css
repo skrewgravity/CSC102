@@ -1,0 +1,27 @@
+body{
+    background-color: darkkhaki;
+    color: darkslategray;
+}
+
+nav{
+    height: 60000px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+}
+
+#Llama meme.jfif{
+    margin-right: 200px;
+    text-align: center;
+}
+
+#bodytext{
+    margin-right: 200px;
+}
+
