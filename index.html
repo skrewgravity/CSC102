@@ -1,19 +1,21 @@
 <!DOCTYPE HTML>
 <HTML>
-    <!--William Schubert, 5/18/2023-->
+<!--William Schubert, 6/21/2023-->
 
 <!--This is the name of my page-->
-<head>
-    <title>William S's Page</title>
-</head>
+<!--We need to link the js file with the html file so we can use the js resources-->
+<script src="code.js"></script>
+<!--we need a style sheet to define the styles for our page-->
+<link href="style.css" rel="stylesheet" type="text/css>" <head>
+<title>William S's Page</title>
 
-<!--Here I changed the color of the page and center my pages header-->
 <body style="background: rgb(207, 218, 197);">
+    </head>
+    <!--Here I changed the color of the page and center my pages header-->
     <header style="text-align: center;">
         <h1>Welcome to Williams Wonderful Website</h1>
     </header>
 </body>
-
 <!--Navigation-->
 <nav>
     <h2>
@@ -22,8 +24,6 @@
     <a href="index.html">Home</a><br>
     <a href="boards.html">Boards </a><br>
 </nav>
-
-
 <!--The following paragraph is centered and the font is smaller than the title above-->
 <header style="text-align: center;">
     <h4>
@@ -32,18 +32,42 @@
         but I'm enjoying it!
     </h4>
     <br>
-    <!--Here is my image, centered in the middle of the page-->
+    <!--Here is my image, centered in the middle of the page
+    Also I have assigned a marquee behavior to the image-->
     <center>
+        <marquee id="mymarquee" class="html-marquee" direction="left" behavior="alternate" scrollamount="12">
         <img id="Llama or Alpaca?" src="Llama meme.jfif" alt="Llama or Alpaca?">
+        </marquee>
     </center>
     </body>
     <!--In a small font,I wrote a short paragraph about me and my page-->
     <p>
-        this is a paragraph about me,
+    <h4>this is a paragraph about me,
         i'm new to this and worried i'll get
         lost or not be able to keep up. but who cares.
-        i'm going to pass this class!
+        i'm going to pass this class!</h4>
     </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--This is my Start button and my Stop button
+        This also sets my onClick parameters-->
+    <button id="startButton" onclick="startFun();">Bounce</button>
+    <button id="stopButton" onclick="stopFun();">Stop Bouncing</button>
+    <br>
+    <br>
+    <!--This is where my die results are written in
+        the sum results are calculated in my code.js page-->
+    <h2>Lets play CRAPS</h2>
+    Die 1 result: <div id="die1Res">Press "Play Craps" to start game</div> <br>
+    Die 2 result: <div id="die2Res">Press "Play Craps" to start game</div> <br>
+    Sum of the dice: <div id="diceSum">Press "Play Craps" to start game</div> <br <!--not finished-->
+    Game result: <div id="gameRes">Press "PLAY CRAPS" to start game</div> <br>
+    <!-- NOT FINISHED-->
+    <button onclick="playCraps();">PLAY CRAPS</button>
+    <br>
+    <br>
     </center>
     <!--The footer here is centered and contains my name and UAT's address-->
     <footer style="text-align: center;">
@@ -54,5 +78,6 @@
         Fax: 602-383-8222<br>
     </footer>
 
+    <!--while(!(succeed =try()));-->
 
 </html>
