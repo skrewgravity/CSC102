@@ -24,9 +24,9 @@
 <center><img id="pic" src="Password Meme.jpg" alt=""></center>
 
 
-   <center><br><h3>Please log in below.</h3></br></center>
+   <center><br><h3>Please log in below.</h3></br>
     <br>
-    <div id="loginStatus">Status of login</div>
+    <div id="loginStatus">Status of login</div></center>
     <br>
     <br>
 <center>
@@ -39,7 +39,26 @@ Zip Code:  <input type="text" id="zipCode"><br>
 
 </form>
 </center>
-
-
+<br>
+<br>
+<br>
+<h1>Palindrome Checker</h1>
+<!--EXAMPLES
+Dammit, I'm Mad
+Do geese see God
+Was It a Cat I Saw
+Borrow or Rob-->
+<br>
+<center>
+<div id="palinStatus">Palindrome Status</div>
+<br>
+<br>
+<form id="palinSubmit" onsubmit="return false">
+Enter A Palindrome: <input type="text" id="palinInput">
+<br>
+<br>
+<input type="submit" onclick="checkPalin();" class="button">
+</form>
+</center>
 </body>
 </html>
