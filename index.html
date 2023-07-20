@@ -5,16 +5,22 @@
 <!--This is the name of my page-->
 <!--We need to link the js file with the html file so we can use the js resources-->
 <script src="code.js"></script>
+<!--Also need to link the js file for Space Launch-->
+<script src="classCode.js"> </script>
 <!--we need a style sheet to define the styles for our page-->
-<link href="style.css" rel="stylesheet" type="text/css>" <head>
+<link href="style.css" rel="stylesheet" type="text/css>"
+<head>
 <title>William S's Page</title>
+</head>
 
+<head>
 <body style="background: rgb(207, 218, 197);">
-    </head>
+    
     <!--Here I changed the color of the page and center my pages header-->
     <header style="text-align: center;">
         <h1>Welcome to Williams Wonderful Website</h1>
     </header>
+</head>
 </body>
 <!--Navigation-->
 <nav>
@@ -65,10 +71,35 @@
     Sum of the dice: <div id="diceSum">Press "Play Craps" to start game</div> <br <!--not finished-->
     Game result: <div id="gameRes">Press "PLAY CRAPS" to start game</div> <br>
     <!-- NOT FINISHED-->
-    <button onclick="playCraps();">PLAY CRAPS</button>
+    <button onclick="playCraps(); ">PLAY CRAPS</button>
     <br>
     <br>
     </center>
+    <br>
+    <br>
+    <br>
+
+    <!-- Below is where I added 2 buttons to my page to play a fun sounds -->
+
+    <h1>Play Sounds</h1>
+    <button onclick="playCreepyJack();" class="button">Pop Goes the Weasel</button>
+    <br>
+    <br>
+    <button onclick="playWilhelm();" class="button">Wilhelm Scream</button>
+
+
+    <!-- this is where my parameters for Fall and Spring launch are used-->
+    <br>
+    <br>
+    <h1>Fun With Objects</h1>
+    <script>
+        const fallLaunch = new Mission("To Boldy Go", 95, 13, "November", 1971, "fiona", 3)
+        const springLaunch = new Mission("already been there", 30, 8, "May", 2024, "laura", 25);
+    </script>
+    <button onclick="displayFall();" class="button">Display fall parameters</button>
+    <button onclick="displaySpring();" class="button">Display spring parameters</button>
+
+    
     <!--The footer here is centered and contains my name and UAT's address-->
     <footer style="text-align: center;">
         <h2>Sir William Schubert</h2><br>
@@ -77,7 +108,8 @@
         Tempe, AZ 85283-1056<br>
         Fax: 602-383-8222<br>
     </footer>
-
     <!--while(!(succeed =try()));-->
+
+
 
 </html>
