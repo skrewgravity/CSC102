@@ -3,6 +3,11 @@ body{
     color: darkslategray;
 }
 
+table, th {
+    border: 1px solid black;
+}
+
+   
 nav{
     height: 60000px;
     width: 200px;
@@ -16,7 +21,7 @@ footer{
     margin-right: 200px;
 }
 
-#Llama meme.jfif{
+#Llamameme.jfif{
     margin-right: 200px;
     text-align: center;
 }
@@ -25,3 +30,10 @@ footer{
     margin-right: 200px;
 }
 
+.button{
+width: 500px;
+height: 30;
+background-color: whitesmoke;
+border-radius: 10px;
+border-color: olivedrab;
+}
